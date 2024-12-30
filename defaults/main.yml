@@ -135,7 +135,7 @@ nextcloud_container_image_customizations_dockerfile_body_custom: ''
 nextcloud_container_image: "{{ nextcloud_container_image_registry_prefix }}nextcloud:{{ nextcloud_container_image_tag }}"
 nextcloud_container_image_tag: "{{ nextcloud_version }}-apache"
 nextcloud_container_image_force_pull: "{{ nextcloud_container_image.endswith(':latest') }}"
-nextcloud_container_image_registry_prefix: docker.io/
+nextcloud_container_image_registry_prefix: docker.io/kyrios/
 
 # nextcloud_container_image_customized is the name of the locally built Nextcloud image
 # which adds various customizations on top of the original (upstream) Nextcloud image.
